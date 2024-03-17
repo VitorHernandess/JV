@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style1.css">
+    
+    <title>Cadastro</title>
+
+</head>
+
+<body>
+    <main>
+        <label for="nome_cadastro"> Nome </label> <br>
+        <input type="text" name="nome" id="nome_cadastro" placeholder="Informe seu nome:">
+        <br>
+        <br>
+        <label for="sobre_cadastro"> Sobrenome </label> <br>
+        <input type="text" name="sobre" id="sobre_cadastro" placeholder="Informe seu sobrenome:">
+        <br>
+        <br>
+        <label for="data_de_nascimento">Seu aniversário</label> <br>
+        <input type="text" name="nascimento" id="date" placeholder="Informe seu aniversário:">
+        <br>
+        <br>
+        <label for="data_de_nascimento">Seu numero</label> <br>
+        <input type="text" name="telefone" id="telefone" placeholder="Informe seu numero:">
+        <br>
+        <br>
+        <label for="email">Email</label> <br>
+        <input type="email" name="email" id="email_cadastro" placeholder="Informe seu endereço email:">
+        <br>
+        <br>
+        <label for="CPF">Seu CPF</label> <br>
+        <input type="text" name="CPF" id="cpf" placeholder="Informe seu CPF:">
+        <br>
+        <br>
+        <input type="submit" value="Realizar cadastro">
+    </main>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js" integrity="sha512-0XDfGxFliYJPFrideYOoxdgNIvrwGTLnmK20xZbCAvPfLGQMzHUsaqZK8ZoH+luXGRxTrS46+Aq400nCnAT0/w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+    $('#date').mask('00/00/0000');
+    $('#cpf').mask('000.000.000-00', {reverse: true});
+    $('#telefone').mask('(00) 0000-0000');
+</script>
+</body>
+</html>
